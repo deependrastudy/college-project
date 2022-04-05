@@ -21,6 +21,11 @@ const dataSchema = new mongoose.Schema({
         required: true,
         type: String
     },
+    type: {
+        required: true,
+        type: Number,
+        default:1
+    },
     created_at: {
         required: true,
         type: String

@@ -1,5 +1,11 @@
 const express = require('express');
-const frontController = require('../controller/front');
+const frontController = require('../controllers/front');
+const authController = require("../controllers/authentication");
+const adminAPI = require("../controllers/adminapi");
 const app = express();
 app.get('/',frontController.list);
+app.post('/sign-up',authController.signUp);
+app.post('/log-in',authController.login);
+app.get('/get-users',adminAPI.getAllUsers);
+app.get('/get-users-by-id',adminAPI.getUsersbyID);
 module.exports = app;
