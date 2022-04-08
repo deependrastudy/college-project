@@ -1,0 +1,81 @@
+{
+	"id": "867a31b9-d08b-08c6-3834-c93c5b0fc8ba",
+	"name": "sign-up",
+	"description": "",
+	"order": [
+		"846c6614-082e-7701-0c07-881a6cb4c7e3"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1649434840068,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "846c6614-082e-7701-0c07-881a6cb4c7e3",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:2000/sign-up",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "867a31b9-d08b-08c6-3834-c93c5b0fc8ba",
+			"data": [
+				{
+					"key": "name",
+					"value": "deependra",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "ds@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "mobile",
+					"value": "9794939495",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "http://localhost:2000/create-category",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1649434840897,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

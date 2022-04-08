@@ -1,0 +1,53 @@
+{
+	"id": "c60707f0-5c91-34fa-6565-e757cd7248eb",
+	"name": "get-category",
+	"description": "",
+	"order": [
+		"3010f1ef-621d-af88-19df-d2f81938f964"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1649434436654,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "3010f1ef-621d-af88-19df-d2f81938f964",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:2000/get-category",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "c60707f0-5c91-34fa-6565-e757cd7248eb",
+			"data": [
+				{
+					"key": "name",
+					"value": "Demo",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "http://localhost:2000/create-category",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1649434437672,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

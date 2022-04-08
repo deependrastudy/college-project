@@ -1,0 +1,81 @@
+{
+	"id": "d4fcfa4c-727a-797f-30d6-c9d85593bd3d",
+	"name": "get-users-by-id",
+	"description": "",
+	"order": [
+		"dca6b92f-01da-9f03-a1f7-83fb474b66d0"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1649435135625,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "dca6b92f-01da-9f03-a1f7-83fb474b66d0",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:2000/get-users-by-id/625060a3ecb9a81a858f9079",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "d4fcfa4c-727a-797f-30d6-c9d85593bd3d",
+			"data": [
+				{
+					"key": "name",
+					"value": "deependra",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "email",
+					"value": "ds@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "mobile",
+					"value": "9794939495",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "password",
+					"value": "123456",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "http://localhost:2000/create-category",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1649435136174,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

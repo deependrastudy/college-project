@@ -1,0 +1,88 @@
+{
+	"id": "8e3a70b5-444a-fb86-4d84-70672c59d2f9",
+	"name": "update-course",
+	"description": "",
+	"order": [
+		"a0453354-19e3-bc6e-88f3-d3e09931a927"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1649433742428,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "a0453354-19e3-bc6e-88f3-d3e09931a927",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:2000/update-course/62505bb13dbe6183b229b4c5",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "8e3a70b5-444a-fb86-4d84-70672c59d2f9",
+			"data": [
+				{
+					"key": "name",
+					"value": "s123",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "category",
+					"value": "sdc",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "categoryName",
+					"value": "d",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "price",
+					"value": "34",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "ducation",
+					"value": "xdfs",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "status",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "http://localhost:2000/update-course/62505bb13dbe6183b229b4c5",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1649433744676,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

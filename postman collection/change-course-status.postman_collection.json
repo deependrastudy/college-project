@@ -1,0 +1,88 @@
+{
+	"id": "daff34c3-5f68-26bc-56bd-093762d65669",
+	"name": "change-course-status",
+	"description": "",
+	"order": [
+		"2924e725-adb5-6b1c-fb20-3ace8e83fcc5"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1649434211045,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "2924e725-adb5-6b1c-fb20-3ace8e83fcc5",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:2000/change-course-status/62505bb13dbe6183b229b4c5",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "daff34c3-5f68-26bc-56bd-093762d65669",
+			"data": [
+				{
+					"key": "name",
+					"value": "s123",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "category",
+					"value": "sdc",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "categoryName",
+					"value": "d",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "price",
+					"value": "34",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "ducation",
+					"value": "xdfs",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				},
+				{
+					"key": "status",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "http://localhost:2000/change-course-status/62505bb13dbe6183b229b4c5",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1649434211863,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

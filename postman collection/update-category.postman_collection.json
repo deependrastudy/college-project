@@ -1,0 +1,53 @@
+{
+	"id": "dd94e6a6-06b5-d7d2-0cdd-83ecef1588fe",
+	"name": "update-category",
+	"description": "",
+	"order": [
+		"e5021785-b6b1-0b7e-bca4-685148060609"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1649434594575,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "e5021785-b6b1-0b7e-bca4-685148060609",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:2000/update-category/62505f03ecb9a81a858f906d",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "dd94e6a6-06b5-d7d2-0cdd-83ecef1588fe",
+			"data": [
+				{
+					"key": "name",
+					"value": "Demo123",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "http://localhost:2000/create-category",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1649434595424,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
