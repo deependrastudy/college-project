@@ -1,18 +1,23 @@
 const Model = require('../schema/categories');
 const addCategory= async(req,res,next)=>{
-    if(!req.body.name) {
-        res.json({status:false,message:"Please Send All Required Parameters",data:{}})
+    if (!req.file) {
+        res.json({status:false,message:"Please Select Valid Image",data:{}})
     } else {
-        const data = new Model({
-            name: req.body.name,
-            created_at: String(Date.now()),
-        })
-        try {
-            data.save();
-            res.json({status:true,message:"Success",data:[]});
-        }
-        catch (error) {
-            res.status(400).json({message: error.message})
+        if(!req.body.name) {
+            res.json({status:false,message:"Please Send All Required Parameters",data:{}})
+        } else {
+            const data = new Model({
+                name: req.body.name,
+                image:req.file.filename,
+                created_at: String(Date.now()),
+            })
+            try {
+                data.save();
+                res.json({status:true,message:"Success",data:[]});
+            }
+            catch (error) { 
+                res.status(400).json({message: error.message})
+            }
         }
     }
 }
@@ -25,6 +30,9 @@ const getCategoryStatus = async(req,res,next)=>{
     res.json({status:true,message:"Success",data:isExists})
 }
 const updateCategories = async(req,res,next)=>{
+    if (req.file) {
+        req.body.image = req.file.filename;
+    }
     Model.findOneAndUpdate({_id: req.params.id},req.body).then(function(resp){
         Model.findOne({_id: req.params.id}).then(function(resp){
             res.json({status:true,message:"Success",data:[]});
