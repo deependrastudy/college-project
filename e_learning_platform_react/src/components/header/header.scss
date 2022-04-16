@@ -1,0 +1,45 @@
+@import "../../assets/css/variable";
+
+.el_header_wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  z-index:999;
+  transition: $transition;
+
+  &.active{
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  .el_header_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+
+    .el_nav_wrapper {
+      .el_nav_inner {
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          li {
+            a {
+              display: inline-block;
+              font-weight: 500;
+              color: $color_white;
+              transition: $transition;
+
+              &:hover {
+                color: $main_color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

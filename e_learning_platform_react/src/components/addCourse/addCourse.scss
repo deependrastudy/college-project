@@ -1,0 +1,70 @@
+@import '../../assets/css/variable';
+
+.el_addCourse_wrapper{
+  position: relative;
+
+  .el_addCourse_inner{
+    .el_addCourse_uploadBlock{
+      position: relative;
+      margin-bottom: 20px;
+
+      input[type="file"]{
+        position: absolute;
+        left: -9999px;
+      }
+
+      label{
+        width: 100%;
+        padding: 80px 50px;
+        background-color: $main_color--light;
+        border: 1px solid $main_color;
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .el_addCourse_uploadList{
+      margin-bottom: 20px;
+      ul{
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        li{
+          margin-right: 10px;
+
+          &:last-child{
+            margin-right: 0;
+          }
+
+          .el_uploaded_block{
+            position: relative;
+            border: 1px solid $main_color;
+            border-radius: 10px;
+
+            .el_close{
+              position: absolute;
+              top: 0;
+              right: 0;
+            }
+
+            img{
+              width: 200px;
+              height: 120px;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .el_addCourse_contentBlock{
+      .el_form_block{
+        max-width: 100%;
+      }
+    }
+  }
+}

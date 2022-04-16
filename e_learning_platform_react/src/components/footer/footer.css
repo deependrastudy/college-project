@@ -1,0 +1,55 @@
+.el_footer_wrapper {
+  background-color: #333333;
+  padding-bottom: 0;
+}
+
+.el_footer_wrapper .el_copyright_wrapper {
+  padding: 15px 0;
+  margin-top: 60px;
+  background-color: #222;
+}
+
+.el_footer_wrapper .el_copyright_wrapper p {
+  text-align: center;
+  margin: 0;
+  color: #fff;
+}
+
+.el_footer_wrapper .el_footer_block .el_footer_heading {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.el_footer_wrapper .el_footer_block .el_footer_logo {
+  margin-bottom: 15px;
+}
+
+.el_footer_wrapper .el_footer_block p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.el_footer_wrapper .el_footer_block .el_footer_nav li {
+  margin-bottom: 10px;
+}
+
+.el_footer_wrapper .el_footer_block .el_footer_nav li:last-child {
+  margin-bottom: 0;
+}
+
+.el_footer_wrapper .el_footer_block .el_footer_nav li a {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.el_footer_wrapper .el_footer_block .el_footer_nav li a:hover {
+  color: #00CEA9;
+}
+/*# sourceMappingURL=footer.css.map */

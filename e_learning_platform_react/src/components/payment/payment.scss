@@ -1,0 +1,48 @@
+@import '../../assets/css/variable';
+
+.el_payment_wrapper{
+  background-color: #000000;
+  padding: 30px 0;
+
+  .el_payment_inner{
+    min-height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .el_payment_block{
+      width: 100%;
+      max-width: 450px;
+      background-color: $color_white;
+      padding: 30px 20px;
+      text-align: center;
+      border-radius: 10px;
+
+      &.successfull{
+        h4{
+          color: #4BB543;
+        }
+      }
+
+      &.cancel{
+        h4{
+          color: #cf142b;
+        }
+      }
+
+      .el_payment_image{
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      h4{
+        margin-bottom: 15px;
+        font-size: 36px;
+      }
+
+      p{
+        font-size: 20px;
+      }
+    }
+  }
+}

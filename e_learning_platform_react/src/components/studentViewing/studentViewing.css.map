@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,0BAA0B,CAAA;EACxB,gBAAgB,EAAE,OAAO;CAC1B;;AACD,AAGM,yBAHmB,CACvB,eAAe,CACb,0BAA0B,AACvB,uBAAuB,CAAA;EACtB,KAAK,EAAE,IAAI;CACZ",
+    "sources": [
+        "studentViewing.scss"
+    ],
+    "names": [],
+    "file": "studentViewing.css"
+}

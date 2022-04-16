@@ -1,0 +1,166 @@
+.el_tutorialDetails_left .el_tutorialDetails_header {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.el_tutorialDetails_left .el_tutorialDetails_header p {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #777777;
+  font-weight: 400;
+}
+
+.el_tutorialDetails_left .el_tutorialDetails_header h5 {
+  margin: 0;
+  font-size: 16px;
+  color: #222;
+  font-weight: bold;
+}
+
+.el_tutorialDetails_left .el_tutorialDetails_header h5 span {
+  color: #00CEA9;
+}
+
+.el_tutorialDetails_left .el_tutorialDetails_videoWrapper {
+  margin-bottom: 20px;
+}
+
+.el_tutorialDetails_left .video_chapter_title {
+  margin-bottom: 10px;
+}
+
+.el_tutorialDetails_left .video_chapter_title h5 {
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+  font-weight: bold;
+}
+
+.el_tutorialDetails_left .el_tutorialDetails_attachmentWrapper {
+  margin-bottom: 30px;
+}
+
+.el_tutorialDetails_left .el_tutorialDetails_attachmentWrapper h4 {
+  margin: 0 0 20px;
+  font-size: 26px;
+  color: #222;
+  font-weight: bold;
+}
+
+.el_tutorialDetails_left .el_tutorialDetails_attachmentWrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.el_tutorialDetails_left .el_tutorialDetails_attachmentWrapper ul li {
+  margin-right: 10px;
+  border: 1px solid #c7c7c7;
+  padding: 5px 5px;
+}
+
+.el_tutorialDetails_left .el_tutorialDetails_whatLearn {
+  background-color: #fff;
+  padding: 30px 20px 20px;
+  -webkit-box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.06);
+  border-left: 4px solid #00CEA9;
+  margin-bottom: 30px;
+}
+
+.el_tutorialDetails_left .el_tutorialDetails_whatLearn h3 {
+  margin: 0 0 20px;
+  font-size: 26px;
+  color: #222;
+  font-weight: bold;
+}
+
+.el_tutorialDetails_left .el_tutorialDetails_whatLearn ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.el_tutorialDetails_left .el_tutorialDetails_whatLearn ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  width: calc(100% / 2);
+}
+
+.el_tutorialDetails_left .el_tutorialDetails_whatLearn ul li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #00CEA9;
+}
+
+.el_tutorialDetails_left .el_tutorialDetails_commentBox textarea {
+  width: 100%;
+  min-height: 150px;
+  resize: none;
+  outline: none;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+  padding: 15px 15px;
+  margin-bottom: 10px;
+}
+
+.el_tutorialDetails_right .el_tutorialDetails_sidebar {
+  -webkit-box-shadow: 0 0 18px 1px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 0 18px 1px rgba(0, 0, 0, 0.06);
+  background-color: #fff;
+}
+
+.el_tutorialDetails_right .el_tutorialDetails_sidebar .el_tutorialDetails_upcomingWrapper ul li .el_tutorialDetails_upcomingBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 15px;
+  border-left: 4px solid transparent;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.el_tutorialDetails_right .el_tutorialDetails_sidebar .el_tutorialDetails_upcomingWrapper ul li .el_tutorialDetails_upcomingBlock:hover {
+  border-color: #00CEA9;
+  background-color: rgba(0, 206, 168, 0.1);
+}
+
+.el_tutorialDetails_right .el_tutorialDetails_sidebar .el_tutorialDetails_upcomingWrapper ul li .el_tutorialDetails_upcomingBlock.active {
+  border-color: #00CEA9;
+  background-color: rgba(0, 206, 168, 0.1);
+}
+
+.el_tutorialDetails_right .el_tutorialDetails_sidebar .el_tutorialDetails_upcomingWrapper ul li .el_tutorialDetails_upcomingBlock .upcoming_thumb {
+  margin-right: 10px;
+}
+
+.el_tutorialDetails_right .el_tutorialDetails_sidebar .el_tutorialDetails_upcomingWrapper ul li .el_tutorialDetails_upcomingBlock .upcoming_name h5 {
+  margin: 0;
+  font-size: 16px;
+  color: #222;
+}
+
+.el_tutorialDetails_right .el_tutorialDetails_sidebar .el_tutorialDetails_upcomingWrapper ul li .el_tutorialDetails_upcomingBlock .upcoming_name h5 a {
+  color: #222;
+}
+/*# sourceMappingURL=tutorialDetails.css.map */
