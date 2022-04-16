@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { Table } from 'reactstrap';
-
+import CategoryService from '../services/categoryService';
+import path from '../services/path';
+import axios from 'axios';
 export default class Category extends Component {
-    
+
      state = {
-        modal: false
+        modal: false,
+        getCategory:[],
      };
      toggle() {
      this.setState({
@@ -18,9 +21,23 @@ export default class Category extends Component {
      }
 
      componentDidMount(){
+        this.getCategory();
+     }
+
+     async getCategory(){
+        // let res =  await CategoryService.getCategory();
+        // this.setState({getCategory: res.data.data});
+         await axios.get(path.API_URL+'get-category').then((res)=>{
+            console.log(res);
+            this.setState({getCategory: res.data.data});
+
+        });
+        // this.setState({getCategory: res.data.data});
+        // console.log(res.data.data);    
      }
 
      render() {
+         console.log("get category = ", this.state.getCategory);
         return (
             <React.Fragment>
                 <div className="content">
@@ -38,41 +55,21 @@ export default class Category extends Component {
                     </div>
 
                     <div className="container mt-2">
-        
-                    <Table striped bordered hover>
-                        <thead>
+                         <p>{JSON.stringify(this.state.getCategory)}</p>
+                    <table className="striped bordered hover">
+                       
                             <tr>
                             <th>#</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Username</th>
+                            <th>Name</th>
+                            <th>Status</th>
+                            <th>Action</th>
                             </tr>
-                        </thead>
-                        <tbody>
+                       
                             <tr>
-                            <td>1</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>   
+                                <td></td>
                             </tr>
-                            <tr>
-                            <td>2</td>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                            </tr>
-                            <tr>
-                            <td>3</td>
-                            <td colSpan={2}>Larry the Bird</td>
-                            <td>@twitter</td>
-                            </tr>
-                            <tr>  
-                            <td>3</td>
-                            <td colSpan={2}>Larry the Bird</td>
-                            <td>@twitter</td>
-                            </tr>
-                        </tbody>
-                    </Table>
+                
+                    </table>
                     </div>
                     
                 </div>
