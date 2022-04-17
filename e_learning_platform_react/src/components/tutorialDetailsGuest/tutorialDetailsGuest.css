@@ -1,0 +1,152 @@
+.el_tutorialDetailsGuest_left .el_tutorialDetailsGuest_header {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.el_tutorialDetailsGuest_left .el_tutorialDetailsGuest_header h2 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 42px;
+  color: #222;
+  font-weight: bold;
+}
+
+.el_tutorialDetailsGuest_left .el_tutorialDetailsGuest_header p {
+  margin: 0 0 10px;
+  max-width: 457px;
+  font-size: 18px;
+  color: #777777;
+  font-weight: 400;
+}
+
+.el_tutorialDetailsGuest_left .el_tutorialDetailsGuest_header h5 {
+  margin: 0;
+  font-size: 16px;
+  color: #222;
+  font-weight: bold;
+}
+
+.el_tutorialDetailsGuest_left .el_tutorialDetailsGuest_header h5 span {
+  color: #00CEA9;
+}
+
+.el_tutorialDetailsGuest_left .el_tutorialDetailsGuest_whatLearn {
+  padding: 30px 20px 20px;
+  -webkit-box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.06);
+  border-left: 4px solid #00CEA9;
+}
+
+.el_tutorialDetailsGuest_left .el_tutorialDetailsGuest_whatLearn h3 {
+  margin: 0 0 20px;
+  font-size: 26px;
+  color: #222;
+  font-weight: bold;
+}
+
+.el_tutorialDetailsGuest_left .el_tutorialDetailsGuest_whatLearn ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.el_tutorialDetailsGuest_left .el_tutorialDetailsGuest_whatLearn ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  width: calc(100% / 2);
+}
+
+.el_tutorialDetailsGuest_left .el_tutorialDetailsGuest_whatLearn ul li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #00CEA9;
+}
+
+.el_tutorialDetailsGuest_right .el_tutorialDetailsGuest_sidebar {
+  background-color: #fff;
+}
+
+.el_tutorialDetailsGuest_right .el_tutorialDetailsGuest_sidebar .el_tutorialDetailsGuest_video {
+  position: relative;
+}
+
+.el_tutorialDetailsGuest_right .el_tutorialDetailsGuest_sidebar .el_tutorialDetailsGuest_video .el_tutorialDetailsGuest_videoOverlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.el_tutorialDetailsGuest_right .el_tutorialDetailsGuest_sidebar .el_tutorialDetailsGuest_video .el_tutorialDetailsGuest_videoOverlay .el_playBtn {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #00CEA9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.el_tutorialDetailsGuest_right .el_tutorialDetailsGuest_sidebar .el_tutorialDetailsGuest_sidebarContent {
+  padding: 20px 20px;
+  -webkit-box-shadow: 0 0 18px 1px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 0 18px 1px rgba(0, 0, 0, 0.06);
+}
+
+.el_tutorialDetailsGuest_right .el_tutorialDetailsGuest_sidebar .el_tutorialDetailsGuest_sidebarContent h3 {
+  margin: 0 0 20px;
+  font-size: 20px;
+  color: #222;
+  font-weight: bold;
+}
+
+.el_tutorialDetailsGuest_right .el_tutorialDetailsGuest_sidebar .el_tutorialDetailsGuest_sidebarContent h3 del {
+  font-size: 18px;
+  opacity: 0.4;
+}
+
+.el_tutorialDetailsGuest_right .el_tutorialDetailsGuest_sidebar .el_tutorialDetailsGuest_sidebarContent .el_btn_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.el_tutorialDetailsGuest_right .el_tutorialDetailsGuest_sidebar .el_tutorialDetailsGuest_sidebarContent .el_btn_list li {
+  margin-right: 10px;
+}
+
+.el_tutorialDetailsGuest_right .el_tutorialDetailsGuest_sidebar .el_tutorialDetailsGuest_sidebarContent .el_btn_list li:last-child {
+  margin-right: 0;
+}
+/*# sourceMappingURL=tutorialDetailsGuest.css.map */

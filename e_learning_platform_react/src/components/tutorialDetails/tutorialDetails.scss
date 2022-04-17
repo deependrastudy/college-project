@@ -1,0 +1,165 @@
+@import "../../assets/css/variable";
+
+.el_tutorialDetails_left{
+  .el_tutorialDetails_header{
+    position: relative;
+    margin-bottom: 30px;
+
+    p{
+      margin: 0 0 10px;
+      font-size: 18px;
+      color: #777777;
+      font-weight: 400;
+    }
+
+    h5{
+      margin: 0;
+      font-size: 16px;
+      color: $heading_color;
+      font-weight: bold;
+
+      span{
+        color: $main_color;
+      }
+    }
+  }
+
+  .el_tutorialDetails_videoWrapper{
+    margin-bottom: 20px;
+  }
+
+  .video_chapter_title{
+    margin-bottom: 10px;
+
+    h5{
+      margin: 0;
+      font-size: 18px;
+      color: $heading_color;
+      font-weight: bold;
+    }
+  }
+
+  .el_tutorialDetails_attachmentWrapper{
+    margin-bottom: 30px;
+
+    h4{
+      margin: 0 0 20px;
+      font-size: 26px;
+      color: $heading_color;
+      font-weight: bold;
+    }
+
+    ul{
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+
+      li{
+        margin-right: 10px;
+        border: 1px solid #c7c7c7;
+        padding: 5px 5px;
+      }
+    }
+  }
+
+  .el_tutorialDetails_whatLearn{
+    background-color: $color_white;
+    padding: 30px 20px 20px;
+    box-shadow: 0 0 15px 1px rgba(0,0,0,0.06);
+    border-left: 4px solid $main_color;
+    margin-bottom: 30px;
+
+    h3{
+      margin: 0 0 20px;
+      font-size: 26px;
+      color: $heading_color;
+      font-weight: bold;
+    }
+
+    ul{
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+
+      li{
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        width: calc(100% / 2);
+
+        &::before{
+          content: "";
+          position: absolute;
+          top: 8px;
+          left: 0;
+          width: 8px;
+          height: 8px;
+          border-radius: 100%;
+          background-color: $main_color;
+        }
+      }
+    }
+  }
+
+  .el_tutorialDetails_commentBox{
+
+    textarea{
+      width: 100%;
+      min-height: 150px;
+      resize: none;
+      outline: none;
+      border: 1px solid #cfcfcf;
+      border-radius: 5px;
+      padding: 15px 15px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.el_tutorialDetails_right{
+  .el_tutorialDetails_sidebar{
+    box-shadow: 0 0 18px 1px rgba(0,0,0,0.06);
+    background-color: $color_white;
+
+    .el_tutorialDetails_upcomingWrapper{
+      ul{
+        li{
+          .el_tutorialDetails_upcomingBlock{
+            display: flex;
+            align-items: center;
+            padding: 15px 15px;
+            border-left: 4px solid transparent;
+            background-color: $color_white;
+            transition: $transition;
+
+            &:hover{
+              border-color: $main_color;
+              background-color: $main_color--light;
+            }
+
+            &.active{
+              border-color: $main_color;
+              background-color: $main_color--light;
+            }
+
+            .upcoming_thumb{
+              margin-right: 10px;
+            }
+
+            .upcoming_name{
+              h5{
+                margin: 0;
+                font-size: 16px;
+                color: $heading_color;
+
+                a{
+                  color: $heading_color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

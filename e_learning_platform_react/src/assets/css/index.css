@@ -1,0 +1,186 @@
+/*Linked other SCSS files*/
+/*Common Style Codes*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: 'Nunito', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a,
+a:focus {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222;
+  font-weight: bold;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  max-width: 1230px;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.el_btn {
+  display: inline-block;
+  min-width: 150px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 40px;
+  padding: 0 15px;
+  text-align: center;
+  background-color: #00CEA9;
+  color: #fff;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.el_btn:hover {
+  border-color: #00CEA9;
+  background-color: transparent;
+  color: #00CEA9;
+}
+
+.el_btn.el_btn_outlined {
+  border-color: #00CEA9;
+  background-color: transparent;
+  color: #00CEA9;
+}
+
+.el_heading_block {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.el_heading_block h2 {
+  margin: 0;
+  font-size: 42px;
+  line-height: 1.5;
+  color: #222;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+.el_heading_block h2 span {
+  color: #00CEA9;
+}
+
+.el_form_block {
+  width: 100%;
+  max-width: 450px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.el_form_block .el_form_field {
+  width: 100%;
+  border: 1px solid #c7c7c7;
+  min-height: 45px;
+  padding: 0 15px;
+  border-radius: 3px;
+  outline: none;
+  color: #222;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.el_form_block textarea.el_form_field {
+  min-height: 150px;
+  resize: none;
+  padding-top: 15px;
+}
+
+.el_form_block input[type="checkbox"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.el_form_block .rememberLabel {
+  position: relative;
+  padding-left: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+  cursor: pointer;
+  margin: 0;
+}
+
+.el_form_block .rememberLabel::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  border: 1px solid #c7c7c7;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.el_form_block .rememberLabel::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 4px;
+  width: 8px;
+  height: 4px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border-left: 1px solid #00CEA9;
+  border-bottom: 1px solid #00CEA9;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.el_form_block input[type="checkbox"]:checked + .rememberLabel::before {
+  border-color: #00CEA9;
+}
+
+.el_form_block input[type="checkbox"]:checked + .rememberLabel::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.el_form_block .el_form_label {
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+}
+/*# sourceMappingURL=index.css.map */

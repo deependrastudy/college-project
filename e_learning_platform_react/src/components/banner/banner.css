@@ -1,0 +1,51 @@
+.el_banner_wrapper {
+  position: relative;
+  min-height: 100vh;
+  background: url("../../assets/images/banner/el_banner_bg.webp") no-repeat center;
+  background-size: cover;
+  background-color: #00CEA9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.el_banner_wrapper .el_banner_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.el_banner_wrapper .el_banner_inner .el_banner_contentBlock {
+  padding: 30px 20px;
+  width: 50%;
+}
+
+.el_banner_wrapper .el_banner_inner .el_banner_contentBlock h1 {
+  margin: 0;
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.el_banner_wrapper .el_banner_inner .el_banner_contentBlock h4 {
+  margin: 0;
+  line-height: 30px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.el_banner_wrapper .el_banner_inner .el_banner_imageBlock {
+  padding: 30px 20px;
+  width: 50%;
+  text-align: center;
+}
+/*# sourceMappingURL=banner.css.map */

@@ -1,0 +1,42 @@
+@import "../../assets/css/variable";
+
+.el_banner_wrapper{
+  position: relative;
+  min-height: 100vh;
+  background: url("../../assets/images/banner/el_banner_bg.webp") no-repeat center;
+  background-size: cover;
+  background-color: $main_color;
+  display: flex;
+  align-items: center;
+
+  .el_banner_inner{
+    display: flex;
+    align-items: center;
+
+    .el_banner_contentBlock{
+      padding: 30px 20px;
+      width: 50%;
+
+      h1{
+        margin: 0;
+        font-size: 48px;
+        color: $color_white;
+        margin-bottom: 10px;
+      }
+      h4{
+        margin: 0;
+        line-height: 30px;
+        font-size: 24px;
+        font-weight: 500;
+        color: $color_white;
+        margin-bottom: 20px;
+        opacity: 0.8;
+      }
+    }
+    .el_banner_imageBlock{
+      padding: 30px 20px;
+      width: 50%;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.el_breadcrumb_wrapper {
+  padding: 200px 0 100px;
+  background-color: #333;
+}
+
+.el_breadcrumb_wrapper .el_breadcrumb_block h3 {
+  margin: 0;
+  font-size: 42px;
+  color: #fff;
+  font-weight: bold;
+}
+/*# sourceMappingURL=breadcrumb.css.map */
