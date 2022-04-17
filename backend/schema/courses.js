@@ -25,6 +25,14 @@ const dataSchema = new mongoose.Schema({
         required: false,
         type: String
     },
+    addedBy: {
+        required: false,
+        type: String
+    },
+    authorName: {
+        required: false,
+        type: String
+    },
     status: {
         required: true,
         type: Number,

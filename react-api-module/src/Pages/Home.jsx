@@ -19,11 +19,11 @@ export default class Home extends Component {
     }
     saveForm=()=>{
         const data = new FormData() 
-       // data.append('image', this.state.file);
+        data.append('image', this.state.file);
         data.append('name', this.state.name);
         data.append('status', 1);
         
-        axios.post("http://localhost:2000/update-category/625166fe7f27f1b8e2f82bc5",data).then((resp)=>{
+        axios.post("http://localhost:2000/create-category",data).then((resp)=>{
             console.log("Resp",resp);
         })  
     }

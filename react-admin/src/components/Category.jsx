@@ -8,12 +8,12 @@ export default class Category extends Component {
 
      state = {
         modal: false,
-        getCategory:[],
+        categories:[],
      };
      toggle() {
-     this.setState({
-         modal: !this.state.modal
-     });
+        this.setState({
+            modal: !this.state.modal
+        });
      }
 
      submitForm() {
@@ -21,15 +21,17 @@ export default class Category extends Component {
      }
 
      componentDidMount(){
-        this.getCategory();
+        axios.get(path.API_URL+'get-category').then((res)=>{
+            this.setState({categories: res.data.data});
+
+        });
      }
 
      async getCategory(){
         // let res =  await CategoryService.getCategory();
         // this.setState({getCategory: res.data.data});
-         await axios.get(path.API_URL+'get-category').then((res)=>{
-            console.log(res);
-            this.setState({getCategory: res.data.data});
+         axios.get(path.API_URL+'get-category').then((res)=>{
+            this.setState({categories: res.data.data});
 
         });
         // this.setState({getCategory: res.data.data});
@@ -37,7 +39,7 @@ export default class Category extends Component {
      }
 
      render() {
-         console.log("get category = ", this.state.getCategory);
+      console.log("categories",this.state.categories);
         return (
             <React.Fragment>
                 <div className="content">
@@ -55,21 +57,32 @@ export default class Category extends Component {
                     </div>
 
                     <div className="container mt-2">
-                         <p>{JSON.stringify(this.state.getCategory)}</p>
-                    <table className="striped bordered hover">
-                       
-                            <tr>
-                            <th>#</th>
-                            <th>Name</th>
-                            <th>Status</th>
-                            <th>Action</th>
-                            </tr>
-                       
-                            <tr>
-                                <td></td>
-                            </tr>
-                
-                    </table>
+                        <table className="table table-striped mt-4">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Image</th>
+                                    <th>Name</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {this.state.categories && this.state.categories.map((item,index)=>{
+                                    return(<tr>
+                                        <td>{index+1}</td>
+                                        <th><img width="100px" height="100px" src={`http://localhost:2000/${item.image}`} /></th>
+                                        <td> {item.name} </td>
+                                        <td></td>
+                                        <td>
+                                            <button className='btn btn-info mr-2'>Edit</button>
+                                            <button className='btn btn-danger ml-2'>Delete</button>
+                                        </td>
+                                    </tr>);
+                                })}
+                                
+                            </tbody>
+                        </table>
                     </div>
                     
                 </div>
