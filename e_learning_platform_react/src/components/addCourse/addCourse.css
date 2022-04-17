@@ -1,0 +1,77 @@
+.el_addCourse_wrapper {
+  position: relative;
+}
+
+.el_addCourse_wrapper .el_addCourse_inner .el_addCourse_uploadBlock {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.el_addCourse_wrapper .el_addCourse_inner .el_addCourse_uploadBlock input[type="file"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.el_addCourse_wrapper .el_addCourse_inner .el_addCourse_uploadBlock label {
+  width: 100%;
+  padding: 80px 50px;
+  background-color: rgba(0, 206, 168, 0.1);
+  border: 1px solid #00CEA9;
+  border-radius: 10px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.el_addCourse_wrapper .el_addCourse_inner .el_addCourse_uploadList {
+  margin-bottom: 20px;
+}
+
+.el_addCourse_wrapper .el_addCourse_inner .el_addCourse_uploadList ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.el_addCourse_wrapper .el_addCourse_inner .el_addCourse_uploadList ul li {
+  margin-right: 10px;
+}
+
+.el_addCourse_wrapper .el_addCourse_inner .el_addCourse_uploadList ul li:last-child {
+  margin-right: 0;
+}
+
+.el_addCourse_wrapper .el_addCourse_inner .el_addCourse_uploadList ul li .el_uploaded_block {
+  position: relative;
+  border: 1px solid #00CEA9;
+  border-radius: 10px;
+}
+
+.el_addCourse_wrapper .el_addCourse_inner .el_addCourse_uploadList ul li .el_uploaded_block .el_close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.el_addCourse_wrapper .el_addCourse_inner .el_addCourse_uploadList ul li .el_uploaded_block img {
+  width: 200px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.el_addCourse_wrapper .el_addCourse_inner .el_addCourse_contentBlock .el_form_block {
+  max-width: 100%;
+}
+/*# sourceMappingURL=addCourse.css.map */

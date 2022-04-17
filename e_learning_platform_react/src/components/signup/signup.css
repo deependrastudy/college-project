@@ -1,0 +1,121 @@
+.el_signup_wrapper {
+  background-color: #000000;
+}
+
+.el_signup_wrapper .el_signup_inner {
+  min-height: 100vh;
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.el_signup_wrapper .el_signup_inner .el_signup_block {
+  width: 100%;
+  max-width: 450px;
+  background-color: #fff;
+  padding: 20px 20px 20px;
+  border-radius: 10px;
+}
+
+.el_signup_wrapper .el_signup_inner .el_signup_block .el_user_role_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.el_signup_wrapper .el_signup_inner .el_signup_block .el_user_role_list li {
+  margin-right: 15px;
+}
+
+.el_signup_wrapper .el_signup_inner .el_signup_block .el_user_role_list li:last-child {
+  margin-right: 0;
+}
+
+.el_signup_wrapper .el_signup_inner .el_signup_block .el_user_role_list li input[type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.el_signup_wrapper .el_signup_inner .el_signup_block .el_user_role_list li label {
+  position: relative;
+  padding-left: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+  cursor: pointer;
+  margin: 0;
+}
+
+.el_signup_wrapper .el_signup_inner .el_signup_block .el_user_role_list li label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  border: 1px solid #c7c7c7;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.el_signup_wrapper .el_signup_inner .el_signup_block .el_user_role_list li label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #00CEA9;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.el_signup_wrapper .el_signup_inner .el_signup_block .el_user_role_list li input[type="radio"]:checked + label::before {
+  border-color: #00CEA9;
+}
+
+.el_signup_wrapper .el_signup_inner .el_signup_block .el_user_role_list li input[type="radio"]:checked + label::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.el_signup_wrapper .el_signup_inner .el_signup_block .el_signup_header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.el_signup_wrapper .el_signup_inner .el_signup_block .el_signup_header h3 {
+  margin: 0;
+  font-size: 36px;
+  color: #222;
+}
+
+.el_signup_wrapper .el_signup_inner .el_signup_block .el_signup_footer p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+}
+
+.el_signup_wrapper .el_signup_inner .el_signup_block .el_signup_footer p a {
+  color: #00CEA9;
+}
+/*# sourceMappingURL=signup.css.map */

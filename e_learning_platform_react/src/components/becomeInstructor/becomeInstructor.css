@@ -1,0 +1,42 @@
+.el_becomeInstructor_wrapper {
+  position: relative;
+  background-color: #ffffff;
+}
+
+.el_becomeInstructor_wrapper .el_becomeInstructor_image {
+  text-align: right;
+}
+
+.el_becomeInstructor_wrapper .el_becomeInstructor_content {
+  min-height: 100%;
+  padding: 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.el_becomeInstructor_wrapper .el_becomeInstructor_content .el_becomeInstructor_contentInner {
+  max-width: 70%;
+}
+
+.el_becomeInstructor_wrapper .el_becomeInstructor_content .el_becomeInstructor_contentInner h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 36px;
+  line-height: 1.3;
+  color: #222;
+  text-transform: capitalize;
+}
+
+.el_becomeInstructor_wrapper .el_becomeInstructor_content .el_becomeInstructor_contentInner p {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  text-transform: capitalize;
+}
+/*# sourceMappingURL=becomeInstructor.css.map */

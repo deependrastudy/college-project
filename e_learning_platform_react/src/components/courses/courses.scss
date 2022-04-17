@@ -1,0 +1,102 @@
+@import "../../assets/css/variable";
+
+.el_courses_wrapper{
+  background-color: $body_color;
+  padding-top: 45px;
+}
+.el_courses_optionWrapper{
+  position: relative;
+
+  .el_courses_row{
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0 0 18px 1px rgba(0,0,0,0.06);
+    padding: 20px 20px;
+    background-color: $color_white;
+    margin-bottom: 30px;
+
+    &:nth-child(even){
+      flex-direction: row-reverse;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    .el_courses_sidebar{
+      padding: 30px 20px;
+      width: 30%;
+      min-height: 320px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      align-items: flex-start;
+      justify-content: center;
+
+      h3{
+        margin: 0 0 20px;
+        font-size: 26px;
+        line-height: 1.3;
+        color: $heading_color;
+
+        span{
+          color: $main_color;
+        }
+      }
+    }
+    .el_courses_slider_wrapper{
+      width: 70%;
+
+      .swiper{
+        padding: 10px 7px 10px 10px;
+      }
+
+      .el_courses_slide{
+        position: relative;
+        box-shadow: 0 1px 8px 1px rgba(0,0,0,0.06);
+
+        .el_courses_content{
+          padding: 10px 10px;
+
+          h4{
+            font-size: 16px;
+            margin-bottom: 10px;
+
+            a{
+              color: $heading_color;
+              display: inline-block;
+              transition: $transition;
+
+              &:hover{
+                color: $main_color;
+              }
+            }
+          }
+
+          h6{
+            font-size: 14px;
+          }
+
+          p{
+            margin: 0 0 10px;
+            color: #777;
+            font-size: 12px;
+
+            span{
+              color: $heading_color;
+              font-weight: 600;
+            }
+          }
+
+          h3{
+            font-size: 20px;
+
+            del{
+              opacity: 0.6;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

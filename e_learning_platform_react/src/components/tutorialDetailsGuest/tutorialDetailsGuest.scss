@@ -1,0 +1,134 @@
+@import "../../assets/css/variable";
+
+.el_tutorialDetailsGuest_left{
+  .el_tutorialDetailsGuest_header{
+    position: relative;
+    margin-bottom: 30px;
+
+    h2{
+      margin: 0;
+      margin-bottom: 10px;
+      font-size: 42px;
+      color: $heading_color;
+      font-weight: bold;
+    }
+
+    p{
+      margin: 0 0 10px;
+      max-width: 457px;
+      font-size: 18px;
+      color: #777777;
+      font-weight: 400;
+    }
+
+    h5{
+      margin: 0;
+      font-size: 16px;
+      color: $heading_color;
+      font-weight: bold;
+
+      span{
+        color: $main_color;
+      }
+    }
+  }
+
+  .el_tutorialDetailsGuest_whatLearn{
+    padding: 30px 20px 20px;
+    box-shadow: 0 0 15px 1px rgba(0,0,0,0.06);
+    border-left: 4px solid $main_color;
+
+    h3{
+      margin: 0 0 20px;
+      font-size: 26px;
+      color: $heading_color;
+      font-weight: bold;
+    }
+
+    ul{
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+
+      li{
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        width: calc(100% / 2);
+
+        &::before{
+          content: "";
+          position: absolute;
+          top: 8px;
+          left: 0;
+          width: 8px;
+          height: 8px;
+          border-radius: 100%;
+          background-color: $main_color;
+        }
+      }
+    }
+  }
+}
+
+.el_tutorialDetailsGuest_right{
+  .el_tutorialDetailsGuest_sidebar{
+    background-color: $color_white;
+    
+    .el_tutorialDetailsGuest_video{
+      position: relative;
+
+      .el_tutorialDetailsGuest_videoOverlay{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .el_playBtn{
+          width: 60px;
+          height: 60px;
+          border-radius: 100%;
+          background-color: $main_color;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    .el_tutorialDetailsGuest_sidebarContent{
+      padding: 20px 20px;
+      box-shadow: 0 0 18px 1px rgba(0,0,0,0.06);
+
+      h3{
+        margin: 0 0 20px;
+        font-size: 20px;
+        color: $heading_color;
+        font-weight: bold;
+
+        del{
+          font-size: 18px;
+          opacity: 0.4;
+        }
+      }
+
+      .el_btn_list{
+        display: flex;
+        align-items: center;
+
+        li{
+          margin-right: 10px;
+
+          &:last-child{
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
